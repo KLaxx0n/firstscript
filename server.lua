@@ -11,9 +11,9 @@ RegisterCommand("Serverselams", function(source, args)
 end, false)
 
 RegisterCommand("duyuru", function(source, args)
-local msg = table.concat(args, " ")
-TriggerClientEvent("chat:addMessage", -1 ,  {
- color = {255, 0 ,0 } ,
- args = {"[DUYURU]", msg}
-})
-end, false )
+    local msg = table.concat(args, " ")
+    TriggerClientEvent("chat:addMessage", -1, {
+        color = { 255, 0, 0 },
+        args = { "[DUYURU]", msg }
+    })
+end, false)
