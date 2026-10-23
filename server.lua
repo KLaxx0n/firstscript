@@ -1,19 +1,19 @@
-RegisterCommand("Serverselams", function(source, args)
-    print("Server Side Selamlar!")
+RegisterCommand("Merhaba", function(source, args) -- user /merhaba ekler
+    print("Server Side Selam")
 
-    local playerid = soruce
-    local msg = tabel.concat(args, " ")
+    local playerid = source
+    local mesaj = table.concat(args, " ")
 
     TriggerClientEvent("chat:addMessage", playerid, {
         color = { 255, 0, 0 },
-        args = { "Server", "Hoş geldin oyuncu" .. playerid .. "Şunu Söylediniz:" .. msg }
+        args = { "Server", "Aramıza Sende Katıldın" .. playerid .. "Şunu Söylediniz:" .. mesaj }
     })
 end, false)
 
 RegisterCommand("duyuru", function(source, args)
-    local msg = table.concat(args, " ")
+    local mesaj = table.concat(args, " ")
     TriggerClientEvent("chat:addMessage", -1, {
         color = { 255, 0, 0 },
-        args = { "[DUYURU]", msg }
+        args = { "[DUYURU]", mesaj }
     })
 end, false)
