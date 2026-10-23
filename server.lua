@@ -6,7 +6,7 @@ RegisterCommand("Serverselams", function(source, args)
 
     TriggerClientEvent("chat:addMessage", playerid, {
         color = { 255, 0, 0 },
-        args = { "Server", "Hoş geldin oyuncu" .. playerid .. "şUNU Söylediniz:" .. msg }
+        args = { "Server", "Hoş geldin oyuncu" .. playerid .. "Şunu Söylediniz:" .. msg }
     })
 end, false)
 
